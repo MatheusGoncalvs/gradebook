@@ -4,10 +4,14 @@ namespace GradeBook
 {
     class Program
     {
+        //Metodo principal do programa. parametro args é um array de strings
         static void Main(string[] args)
         {
-            //Explicando algumas coisas dos bastidores do dotnet run
-            Console.WriteLine("Hello World!");
+            //Utilizando interpolação de Strings com expressão C# $"{}"
+            Console.WriteLine($"Hello {args[0]} !");
+
+            //Utilizando concatenação de Strings
+            //Console.WriteLine("Hello" + args[0] + "!");
         }
     }
 }
